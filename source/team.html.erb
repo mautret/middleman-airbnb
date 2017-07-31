@@ -1,0 +1,16 @@
+
+<div class="background-duocolors">
+  <div class="container-content">
+  <h1>This template was built with <i class="fa fa-heart" aria-hidden="true"></i> by</h1>
+  <ul class="list-inline text-center">
+  <% data.users.each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+      <h3><%= user.name %></h3>
+      <h4><i class="fa fa-github" aria-hidden="true"></i><%= user.github_nickname %></h4>
+    </li>
+  <% end %>
+  </ul>
+  </div>
+
+</div>
